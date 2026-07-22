@@ -43,6 +43,14 @@ just want renders (and a cloud-ready file) to land straight in a synced Drive fo
 3. In the notebook: pick a Blender build that matches your file's version, enable the GPU,
    point it at the `.blend` on your Drive, render.
 
+> ⚠️ **Best for small shots.** Colab's free tier gives you a single **NVIDIA T4** — great
+> for individual frames, look-dev previews, and light-to-medium scenes, but it is **not a
+> production render farm**. Heavy scenes (dense geometry, high sample counts, big
+> volumetrics/displacement, 4K) render slowly and can hit the session's time and VRAM
+> limits. Keep it to **1080p or below, moderate samples (let the denoiser do the rest)**,
+> and split big jobs into pieces. For consistent horsepower, use Colab Pro or a dedicated
+> render farm.
+
 ## Notes
 
 - The render step blocks Blender while it runs (a normal foreground render).
