@@ -1,12 +1,28 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
 
-# Blender
+# Blender & Renders
 *.blend
 *.blend1
+*_cloud.blend
 /renders/
+/out/
+*.png
+*.jpg
+*.jpeg
+*.exr
 
-# OS
+# Environment & Credentials
+.env
+*.pem
+*.key
+*.json
+!blender_render.ipynb
+
+# OS & IDE
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
